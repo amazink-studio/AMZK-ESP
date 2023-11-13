@@ -1,0 +1,192 @@
+.somos {
+	padding: 6rem 1rem 0rem;
+}
+.somos h2 {
+	margin: 0 0 1.6rem;
+}
+.somos p {
+	margin: 0 1rem 1.6rem 3rem;
+}
+
+.seccionNosotras {
+	padding: 0;
+	margin: 0 0 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 10rem;
+	justify-content: center;
+	align-items: flex-end;
+}
+.seccionNosotras_invertido {
+	flex-direction: row-reverse;
+}
+.descripcion {
+	flex: 1 1 400px;
+
+	max-width: 50ch;
+}
+.seccionNosotras img {
+	flex: 1 1 100;
+	width: 100%;
+	height: 100%;
+	max-width: 350px;
+}
+
+.equipoAMZK {
+	margin: 4rem 0 4rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: flex-start;
+	justify-content: center;
+	justify-items: center;
+}
+
+.perfil {
+	padding: 2rem 0 0;
+	width: 40%;
+	min-width: 250px;
+	max-width: 400px;
+
+	display: flex;
+	flex-direction: column;
+
+}
+.perfil img {
+	margin: 0 auto;
+	padding: 0.5rem;
+	width: 70%;
+	background-color: var(--negro);
+	border-radius: 100%;
+}
+.perfil .nombre {
+	font-family: var(--titulos);
+}
+.perfil .nombre,
+.perfil .cargo {
+	margin: 0;
+	text-align: center;
+	background-color: var(--negro);
+}
+.enlaces {
+	margin: 0 ;
+	padding: 0;
+	text-align: center;
+}
+.perfil a{
+	color: unset;
+	display: inline-block;
+	background-color: unset;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.perfil svg {
+	margin: 0.7rem;
+	fill: var(--morado);
+	height: 2rem;
+}
+.perfil svg:hover {
+	fill: var(--naranja);
+}
+
+@media (min-width: 600px) {
+	.somos h2 {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+}
+
+@media (min-width: 820px) {
+	.somos {
+		padding: 10rem 4rem 0rem;
+	}
+	.somos h2 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	.somos p {
+		margin: 0 1rem 2rem 4rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.somos {
+		padding: 10rem 4rem 4rem;
+	}
+	.somos h2 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	.somos p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		margin: 0 1rem 2rem 6rem;
+	}
+	.descripcion {
+		max-width: 55ch;
+	}
+	.equipoAMZK {
+		padding: 4rem 0;
+		gap: 2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.fondo-1 {
+	background-image: url(../img/nosotras_fondo-1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top center;
+}
+
+.fondo-2 {
+	background-image: url(../img/nosotras_fondo-2.png);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: top left;
+	z-index: 100;
+}
+
+.fondo-3 {
+	background-image: url(../img/nosotras_fondo-3.png);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: left top;
+}
+
+.fondo-4 {
+	background-image: url(../img/nosotras_fondo-4.png);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: right top;
+}
+
+.fondo-5 {
+	background-image: url(../img/nosotras_fondo-5.png);
+	background-repeat: no-repeat;
+	background-size: 65%;
+	background-position: left top;
+}
+
+.fondo-6 {
+	background-image: url(../img/nosotras_fondo-6.png);
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: top center;
+}
+
+.fondo-7 {
+	background-image: url(../img/nosotras_fondo-7.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: top right;
+}

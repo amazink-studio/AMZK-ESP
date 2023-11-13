@@ -1,0 +1,161 @@
+@charset 'UTF-8';
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@300&family=IBM+Plex+Sans:wght@200;400;600&family=Space+Grotesk:wght@600&family=Space+Mono:ital@0;1&display=swap');
+/* VARIABLES */
+:root {
+	--menta: #d7eedb;
+	--negro: #212121;
+	--naranja: #ef920e;
+	--amarillo: #ffc02d;
+	--azul: #0502eb;
+	--morado: #cd63ee;
+	--celeste: #0ab1db;
+	--celesteSecundario: #e3fce7;
+	/* FUENTES */
+	--titulos: 'Space Mono', monospace;
+	--subTitulos: 'Hepta Slab', serif;
+	--destacados: 'Space Grotesk', sans-serif;
+	--parrafo: 'IBM Plex Sans', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+/*	background-color: rgba(0, 255, 255, 0.1);*/
+}
+html {
+	font-family: var(--parrafo);
+	font-size: 100%;
+	line-height: 1.6rem;
+
+	scroll-behavior: smooth;
+}
+
+/* Bloquear animaciones */
+@media (prefers-reduced-motion) {
+	html {
+		scroll-behavior: auto !important;
+	}
+	.seccionNosotras img {
+		display: none;
+	}
+	nav .menu {
+	transition: left 1s ease-in-out !important;
+}
+}
+
+
+body {
+	background-color: var(--negro);
+	color: var(--menta);
+}
+
+/* Manejo tipogáfico general*/
+h1 {
+	font-family: var(--titulos);
+	font-size: 2rem;
+	line-height: 2.4rem;
+}
+h2 {
+	font-family: var(--subTitulos);
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+h3 {
+	font-family: var(--destacados);
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+h1, h2, h3 {
+	text-wrap: balance;
+}
+p {
+	margin: 0 0 1.6rem;
+	font-weight: 400;
+}
+
+a {
+	color: var(--morado);
+	transition: color .2s ease-out, background-color .2s ease-out;
+}
+a:hover, a:active, a:after {
+	background-color: var(--menta);
+	color: var(--negro);
+	transition: color .2s ease-out, background-color .2s ease-out;
+}
+
+/* Líneas de contenido */
+/* DISEÑO */
+.fondoAzul {
+	background-color: var(--azul);
+	color: var(--morado);
+}
+/* ANIMACIÓN */
+.fondoCeleste {
+	background-color: var(--celeste);
+	color: var(--menta);
+}
+/* COMUNICACIÓN ESTRATÉGICA */
+.fondoMenta {
+	background-color: var(--menta);
+	color: var(--celeste);
+}
+/* DIGITAL */
+.fondoMorado {
+	background-color: var(--morado);
+	color: var(--azul);
+}
+/* RELATORÍAS */
+.fondoNaranja {
+	background-color: var(--naranja);
+	color: var(--negro);
+}
+
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+
+
+::-moz-selection, 
+::selection {
+	background: #7de2f9;
+	text-shadow: none;
+	color: #212121;
+}
+
+/* Para ocultar visualmente y de los lectores de pantalla */
+.hidden, [hidden] {
+	display: none !important;
+}
+
+/* Para ocultar visualmente pero no de los lectoras de pantalla	 */
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 0;
+	font-size: 0;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	/* 1 */
+}
+/* Lo visible sólo para lectores de pantalla puede ser accedido por el teclado */
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
+}
+
+/* Para esconder de todos los navegadores pero manteniendo el layout */
+.invisible {
+	visibility: hidden;
+}
+
+

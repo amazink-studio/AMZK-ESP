@@ -1,0 +1,141 @@
+#hero {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	height: 100dvh;
+}
+#hero video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.hero_titulo {
+	position: absolute;
+	font-family: var(--destacados);
+	font-size: 2rem;
+	line-height: 2.6rem;
+	text-align: center;
+	margin: 1rem;
+	text-shadow: 0.05em 0.05em 0 var(--negro);
+	max-width: 35ch;
+}
+
+.lineas {
+	min-height: 100vh;
+	min-height: 100dvh;
+	padding: 0;
+
+	display: flex;
+
+	flex-direction: column;
+	
+	justify-content: space-evenly;
+	
+}
+.lineas img {
+	display: block;
+	object-fit: contain;
+	width: 100%;
+	max-width: 600px;
+	max-height: 70vh;
+	max-height: 70dvh;	
+	padding: 3rem 0 0;
+}
+.lineas_contenido {
+	padding: 1rem 2rem 6rem;
+	max-width: 45ch;
+	align-self: flex-end;
+}
+.lineas_contenido h2 {
+	margin: 0 0 1rem 0;
+}
+.lineas_contenido p {
+	margin: 0 0 0 3rem;
+}
+
+@media (min-width: 600px){
+	.lineas {
+		min-height: 80vh;
+		min-height: 80dvh;
+	}
+	.lineas img {
+		padding: 0;
+	}
+	.lineasAlternas img {
+		align-self: flex-end;
+	}
+	.lineasAlternas .lineas_contenido {
+		align-self: flex-start;
+	}
+	.lineas_contenido h2 {
+		font-size: 2rem;
+	}
+	.hero_titulo {
+		font-size: 3rem;
+		line-height: 3.6rem;
+		margin: 0 3rem;
+	}
+}
+@media (min-width: 820px) {
+	.lineas {
+		min-height: 60vh;
+		min-height: 60dvh;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 5rem 2rem;
+		justify-content: center;
+	}
+	.lineasAlternas {
+		flex-direction: row-reverse;
+	}
+	.lineas img {
+		flex: 3 1 500px;
+		align-self: center;
+	}
+	.lineas_contenido,
+	.lineasAlternas .lineas_contenido {
+		flex: 1 1 30ch;
+		align-self: flex-end;
+	}
+	.lineas_contenido h2 {
+		
+		line-height: 2.4rem;
+	}
+
+}
+@media (min-width: 1000px){
+	.lineas {
+		min-height: 50vh;
+		min-height: 50dvh;
+	}
+	.lineas_contenido {
+		max-width: 60ch;
+	}
+	.hero_titulo {
+		font-size: 4.5rem;
+		line-height: 5rem;
+		margin: 0 6rem;
+	}
+	.lineas_contenido h2 {
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+	.lineas_contenido p {
+		font-size: 1.3rem;
+	}
+}
+@media (min-width: 1400px){
+	.lineas img {
+		max-width: 800px;
+	}
+	.lineas_contenido h2 {
+		font-size: 3rem;
+		line-height: 3.4rem;
+	}
+	.lineas_contenido p {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+}

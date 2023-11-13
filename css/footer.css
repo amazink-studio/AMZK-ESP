@@ -1,0 +1,208 @@
+footer {
+	background-color: var(--menta);
+	color: var(--negro);
+}
+footer h3 {
+	font-size: 1.8rem;
+}
+
+/* CLIENTES */
+#clientes {
+	overflow: hidden;	
+/*	background-color: var(--negro);*/
+}
+#clientes h3 {
+	padding: 4rem 0 0;
+	text-align: center;
+/*	color: var(--menta);*/
+}
+.clientesCarrusel {
+	margin: 0;
+}
+.clientesCarrusel img {
+	max-width: 250px;
+	height: 100%;
+}
+/* Slider */
+#clientes .slider {
+	width: 100%;
+}
+#clientes .slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+		touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+#clientes .slick-slider .slick-track,
+#clientes .slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	   -moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		 -o-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+}
+#clientes .slick-list {
+	position: relative;
+	display: block;
+/*	overflow: hidden;*/
+}
+#clientes .slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	padding: 4rem 0 2rem;
+	margin: 0 1rem;
+	min-height: 1px;
+}
+#clientes .slick-initialized .slick-slide {
+	display: block;
+}
+#clientes .slick-prev,
+#clientes .slick-next,
+#clientes .slick-autoplay-toggle-button {
+	display: none !important;
+}
+
+#clientes::after {
+	display: block;
+	width: 100%;
+	height: 1rem;
+	content: "";
+	background-image: url(../img/footer_separador.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+/* CONTACTO */
+#contacto {
+	scroll-margin-top: 2rem;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.enlaceContacto {
+	margin: 1rem 0;
+}
+/* REDES */
+#redes {
+	padding: 0 2.5rem;
+	flex: 1 1 220px
+}
+#redes section {
+	margin: 4rem 0 0;
+}
+.iconos {
+	text-decoration: none;
+}
+.iconos > * {
+	fill: var(--morado);
+	margin: 2rem 1rem 0 0;
+	width: 2rem;
+}
+.iconos:hover > * {
+	fill: var(--negro);
+}
+.animFooter {
+	display: none;
+}
+@media (min-width: 700px) {
+	.animFooter {
+		display: block;
+		margin: 100px 0 0;
+		height: 150px;
+		background-image: url(../img/footer_separador-2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+/* FORMULARIO DE CONTACTO */
+#contacto_form {
+	padding: 4rem 2.5rem 4rem;
+	flex: 4 0 250px;
+}
+#contacto_form label {
+	display: block;
+	margin: 1rem 0 0;
+}
+#contacto_form input, #contacto_form textarea {
+	width: calc(100% - 1.8rem);
+	margin: 0.2rem 0;
+	padding: 0.5rem;
+	font-family: var(--parrafo);
+	border: solid 1px var(--negro);
+	background-color: var(--menta);
+}
+#contacto_form input[type='checkbox'] {
+	width: 1rem;
+	height: 1rem;
+	display: inline;	
+}
+#contacto_form textarea {
+	min-height: 6rem;
+	resize: vertical;
+}
+#contacto_form input:focus, #contacto_form textarea:focus {
+	background-color: var(--celesteSecundario);
+	outline: solid 2px var(--azul);
+}
+#contacto_form button {
+	background-color: unset;
+	margin: 1rem 0 0;
+	color: var(--morado);
+	border: none;
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#contacto_form button:hover {
+	background-color: var(--negro);
+	color: var(--menta);
+}
+
+#legal {
+	background-color: var(--negro);
+	color: var(--menta);
+	font-size: 0.8rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+
+#result {
+	margin: 1rem 0;
+	max-width: 400px;
+	font-family: var(--destacados);
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	color: var(--azul);
+}
+.invalid-feedback,
+.empty-feedback {
+	display: none;
+	color: red;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+	display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+	display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+	border-color: #dc3545;
+}
